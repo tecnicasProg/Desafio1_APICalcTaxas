@@ -24,7 +24,7 @@ public class CriaOperacoes{
 
         Persistencia p = new Persistencia();
         Map<Integer, Conta> contas = p.loadContas();
-        System.out.println("\nContas:");
+        System.out.println("\nContas existentes:");
         contas.keySet().stream()
             .forEach(k->System.out.println(contas.get(k)));
 
